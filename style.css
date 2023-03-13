@@ -1,0 +1,152 @@
+/* -------- ROOT VARIAVEIS ----------- */
+:root{
+    --color-primary:#06d354;
+    --color-white: #ffffff;
+    --color-danger:#011379;
+    --color-success: #41f1b5;
+
+
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+    
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    
+
+    --box-shadow: 5 2rem 3rem;
+    }
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#04ee79,#ffffff);
+    overflow-x: hidden;
+}
+
+/* Nav */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    height: 100px;
+    border-radius: 30px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:var(--color-white);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+header ul li a:hover,
+header ul li a.active{
+    background:var(--color-white);
+    color:var(--color-primary);
+    transition: 0.4s;
+}
+
+/* Fim Nav */
+
+/* Conteudo Principal */
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#ffffff, transparent);
+    z-index: 1000;
+}
+
+section img{
+    height: 600px;
+    top: 0;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    right: 10px;
+    z-index: 10;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+#text{
+    position: absolute;
+    color: var(--color-white);
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    margin-bottom: 200px;
+
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: var(--border-radius-3);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 1.5em;
+    z-index: 0;
+    transform: translateY(100px);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 200px;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #ffffff;
+}
+
